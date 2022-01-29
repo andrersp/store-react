@@ -1,9 +1,12 @@
+import { Box } from '@chakra-ui/react'
 
 
-const HomePage =  () => {
+const HomePage = () => {
     return (
         <>
-        Index Page
+            <Box bg='tomato' w='100%' p={4} color='white'>
+                Index Page
+            </Box>
         </>
 
     )
