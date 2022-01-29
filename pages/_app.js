@@ -6,14 +6,15 @@ import { ChakraProvider } from "@chakra-ui/react"
 
 const MyApp = ({ Component, pageProps }) => {
     return (
-        <>
+
+
+        <ChakraProvider>
             <Header>
                 <title>STORE</title>
             </Header>
-            <ChakraProvider>
-                <Component {...pageProps} />
-            </ChakraProvider>
-        </>
+            <Component {...pageProps} />
+        </ChakraProvider>
+
     )
 }
 
